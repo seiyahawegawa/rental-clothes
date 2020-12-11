@@ -26,11 +26,5 @@
             都道府県
             %span.Form-require 必須
           = f.text_field :prme, class: "Address__form-set__apartment-name", placeholder: "○マンション/○ビル○号室"
-          //.Address__form-set__room
-          //= f.text_field :room, class: "Address__form-set__room-number", placeholder: "部屋番号"
-          .Address__form-set__phone
-            電話番号（半角）
-            %span.Form-require.option 任意
-          = f.text_field :phone_number, class: "Address__form-set__phone-number", placeholder: "電話番号"
           .Address__form-set__user-register
           = f.submit "ユーザー登録", class: "Address__form-set__user-register-btn"
