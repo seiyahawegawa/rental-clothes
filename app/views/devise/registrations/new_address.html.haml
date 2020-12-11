@@ -26,5 +26,19 @@
             都道府県
             %span.Form-require 必須
           = f.text_field :prme, class: "Address__form-set__apartment-name", placeholder: "○マンション/○ビル○号室"
-          .Address__form-set__user-register
+
+          .Address__form-set__municipality
+            市区町村
+            %span.Form-require 必須
+          = f.text_field :city, class: "Address__form-set__municipality-name", placeholder: "市区町村"
+          .Address__form-set__houseNumber
+            番地以降（全角）
+            %span.Form-require 必須
+          = f.text_field :address_line, class: "Address__form-set__houseNumber-math",placeholder: "○丁目○番地○"
+          .Address__form-set__apartment
+            = f.text_field :building_name, class: "Address__form-set__apartment-name", placeholder: "○マンション/○ビル○号室"
+
+
+            .Address__form-set__user-register
           = f.submit "ユーザー登録", class: "Address__form-set__user-register-btn"
+

@@ -21,6 +21,11 @@ ActiveRecord::Schema.define(version: 2020_12_09_090935) do
     t.string "address_first_name", null: false
     t.string "address_family_name_kana", null: false
     t.string "address_first_name_kana", null: false
+    t.string "post_code", null: false
+    t.string "prefecture_id", null: false
+    t.string "city", null: false
+    t.string "address_line", null: false
+    t.string "building_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_addresses_on_user_id"
