@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'logouts/index'
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
     :sessions => 'users/sessions'   
@@ -26,4 +27,5 @@ Rails.application.routes.draw do
   resources :topscreens, only: [:index]
   resources :mens, only: [:index]
   resources :users, only: [:index]
+  resources :logouts, only: [:index]
 end
