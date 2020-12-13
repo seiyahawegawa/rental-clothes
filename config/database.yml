@@ -84,6 +84,3 @@ production:
    adapter: postgresql
    encoding: unicode
    pool: 5
-   database: rental_clothes_production
-   username: rental_clothes
-   password: <%= ENV['RENTAL_CLOTHES_DATABASE_PASSWORD'] %>
