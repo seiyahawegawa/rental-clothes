@@ -80,7 +80,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: rental_clothes_production
-  username: rental_clothes
-  password: <%= ENV['RENTAL_CLOTHES_DATABASE_PASSWORD'] %>
+   <<: *default
+   adapter: postgresql
+   encoding: unicode
+   pool: 5

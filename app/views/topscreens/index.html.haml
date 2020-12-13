@@ -27,18 +27,20 @@
       %ul.Header-part__contents__menu__right
         %li.Header-part__contents__menu__left__list--first
           %li.Header-part__contents__menu__left__list--first
-            -# = link_to "マイページ", users_path, class: 'Header-part__contents__menu__right' 
-        
-          %li.Header-part__contents__menu__left__list--first
-            = link_to "#", class: 'Header-part__contents__menu__left__list--first__btn' do
-              ログイン
-          %li.Header-part__contents__menu__left__list--second
-            = link_to "#", class: 'Header-part__contents__menu__left__list--second__btn' do
-              新規会員登録
+            -if user_signed_in?
+              %li.Header-part__contents__menu__left__list--first
+                = link_to "マイページ", users_path, class: 'Header-part__contents__menu__right' 
+            -else
+              %li.Header-part__contents__menu__left__list--first
+                = link_to "/users/sign_in", class: 'Header-part__contents__menu__left__list--first__btn' do
+                  ログイン
+              %li.Header-part__contents__menu__left__list--second
+                = link_to "/users/sign_up", class: 'Header-part__contents__menu__left__list--second__btn' do
+                  新規会員登録
 
 .img 
   .img__top
-    %img(src="assets/sample.png" alt="イメージ画像" class="img__header")
+    = image_tag "sample.png", class: "img__header"
     %p 特別な日に特別な服をレンタルしませんか。
 
 .wrapper
