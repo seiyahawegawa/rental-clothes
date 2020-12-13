@@ -1,4 +1,5 @@
 class Address < ApplicationRecord
+
   belongs_to :user, optional: true
 
   validates :address_family_name,
@@ -28,5 +29,6 @@ class Address < ApplicationRecord
   validates :building_name,
     format: { with: /\A([ぁ-んァ-ン一-龥0-9０-９]|ー)+\z/},
     allow_blank: true
-  
+    extend ActiveHash::Associations::ActiveRecordExtensions
+    belongs_to_active_hash :prefecture
 end

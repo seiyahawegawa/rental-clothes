@@ -1,3 +1,4 @@
+
 .Address
   .Address__box
     .Address__item
@@ -25,8 +26,7 @@
           .Address__form-set__Prefecture_id
             都道府県
             %span.Form-require 必須
-          = f.text_field :prme, class: "Address__form-set__apartment-name", placeholder: "○マンション/○ビル○号室"
-
+          = f.text_field :prefecture_id, class: "Address__form-set__Prefecture", placeholder: "都道府県"
           .Address__form-set__municipality
             市区町村
             %span.Form-require 必須
@@ -37,8 +37,7 @@
           = f.text_field :address_line, class: "Address__form-set__houseNumber-math",placeholder: "○丁目○番地○"
           .Address__form-set__apartment
             = f.text_field :building_name, class: "Address__form-set__apartment-name", placeholder: "○マンション/○ビル○号室"
-
-
-            .Address__form-set__user-register
+          //.Address__form-set__room
+          //= f.text_field :room, class: "Address__form-set__room-number", placeholder: "部屋番号"
+          .Address__form-set__user-register
           = f.submit "ユーザー登録", class: "Address__form-set__user-register-btn"
-
