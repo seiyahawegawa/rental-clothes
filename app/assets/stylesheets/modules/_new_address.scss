@@ -18,7 +18,7 @@
     align-items: center;
   }
   &__title {
-    font-weight: 800;
+    
     font-size: 20px;
   }
   &__form {
@@ -31,14 +31,14 @@
   &__form-set {
   }
   &__form-set__name {
-    font-weight: 600;
+   
   }
   span {
     color:white;
     border: solid 2px red;
     background-color: red;
     border-radius: 5px;
-    font-weight: 600;
+ 
   }
   &__form-set__fullname {
     display: flex;
@@ -55,7 +55,7 @@
     margin-bottom: 15px;
   }
   &__form-set__Kana {
-    font-weight: 600;
+    
   }
   &__form-set__kanafull {
     display: flex;
@@ -72,7 +72,7 @@
     margin-bottom: 15px;
   }
   &__form-set__PostalCode {
-    font-weight: bold;
+    
   }
   &__form-set__PostalCode-number {
     width: 400px;
@@ -80,7 +80,7 @@
     margin-bottom: 15px;
   }
   &__form-set__Prefecture_id {
-    font-weight: bold;
+    
   }
   &__form-set__Prefecture {
     width: 400px;
@@ -88,7 +88,7 @@
     margin-bottom: 15px;
   }
   &__form-set__municipality {
-    font-weight: bold;
+    
   }
   &__form-set__municipality-name {
     width: 400px;
@@ -96,7 +96,7 @@
     margin-bottom: 15px;
   }
   &__form-set__houseNumber{
-    font-weight: bold;
+    
   }
   &__form-set__houseNumber-math {
     width: 400px;
@@ -112,7 +112,7 @@
     margin-bottom: 15px;
   }
   &__form-set__phone {
-    font-weight: bold;
+    
   }
   &__form-set__room-number {
     width: 400px;
@@ -131,8 +131,8 @@
 
   }
   &__form-set__user-register-btn {
-    background-color: #3CCACE;  
-    border: solid 1px #3CCACE;
+    background-color: black;  
+    border: solid 1px black;
     color: white;
     font-weight: 800;
     width: 400px;
