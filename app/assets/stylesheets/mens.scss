@@ -1,3 +1,78 @@
-// Place all the styles related to the mens controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.clothes__product{
+  padding-top: solid  black 1px;
+  background-color: white;
+  height: 100%;
+  
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    // line-height: 1.4;
+    // font-weight: bold;
+  }
+  // &__product{
+
+    &--lists{
+    padding: 50px 0 0;
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+      &__list{
+        
+        text-decoration: none;
+        font-size: 25px;
+        display: inline-block;
+        margin-top: 20px;
+        // width: 100%;
+        
+        .image_tag{
+          height: 50px;
+          background-color: white;
+          color: black;
+          display: inline-block;
+          text-decoration: none;
+          position: relative;
+          .clothes__product__images{
+            text-decoration: none;
+            height: 300px;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            z-index: auto;
+            &--image{
+              text-decoration: none;
+              font-size: 50px;
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              z-index: auto;
+              height: 300px;
+              object-fit: cover;
+            }
+          }
+        }
+        &__body{
+          background-color: white;
+          color: black;
+          margin: -5px 19px;
+          height: 100px;
+        }
+      }
+    }
+    &__details__menu{
+      list-style: none;
+      font-size: 16px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    } 
+}
+

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'items/index'
   get 'logouts/index'
   devise_for :users, :controllers => {
     :registrations => 'users/registrations',
@@ -25,7 +26,7 @@ Rails.application.routes.draw do
   # get 'users/index'
   root 'topscreens#index'
   resources :topscreens, only: [:index]
-  resources :mens, only: [:index]
+  resources :mens, only: [:index, :show]
   resources :users, only: [:index]
   resources :logouts, only: [:index]
 end
