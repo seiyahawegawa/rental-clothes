@@ -1,0 +1,28 @@
+.side
+  .side__titls
+    %h1
+      .side__titl
+        DIOR FLOWERSオーバーサイズ Tシャツ
+      .side__subtitl
+        %span コットン ジャージー
+  .sizes
+    .sizes__selectors
+      %select{:name => "sizes__selector"}
+        %option{:value => "0"}  サイズを選んでください
+        %option{:value => "1"}  34
+        %option{:value => "2"}  36
+        %option{:value => "3"}  38
+        %option{:value => "4"}  40
+      
+  .prices
+    .prices__actions
+      .prices__actions__price
+      .prices__actions__details
+        %span ￥38,000 税込み
+      
+      .prices__actions__buttons
+        %button.prices__actions__buttons__link
+          レンタル
+        %button.prices__actions__buttons__heart
+          %span.prices__actions__buttons__icon
+            = icon('fas', 'heart')

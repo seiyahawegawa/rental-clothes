@@ -3,7 +3,7 @@ class MensController < ApplicationController
     @item = Item.all
   end
   def show
-    @item = Item.find(params[:id])
+    # @item = Item.find(params[:id])
   end
 
 end
