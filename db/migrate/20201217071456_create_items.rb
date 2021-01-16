@@ -2,9 +2,11 @@ class CreateItems < ActiveRecord::Migration[6.0]
   def change
     create_table :items do |t|
       t.string :name
-      t.string :item_id, null: false
-      t.timestamps
+      t.string :id, null: false
+      t.references :price
+     
     end
-    add_index :items, :item_id, unique: true
+    add_column :items,:string
+    add_index :items,
   end
 end

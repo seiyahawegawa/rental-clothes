@@ -29,4 +29,5 @@ Rails.application.routes.draw do
   resources :mens, only: [:index, :show]
   resources :users, only: [:index]
   resources :logouts, only: [:index]
+  resources :items, only: [:index, :show]
 end

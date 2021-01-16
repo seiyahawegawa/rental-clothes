@@ -1,9 +1,10 @@
 class MensController < ApplicationController
   def index
-    @item = Item.all
+    @items = Item.find(1)
   end
   def show
-    # @item = Item.find(params[:id])
+    # @items = Item.find(id: params[:id])
   end
 
+  
 end
