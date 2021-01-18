@@ -1,20 +1,2 @@
-.main	
-	.show-main
-		.item-box 
-			.item-box-name
-				%h2
-					=@items.name
-			.item-image-box
-				.image-main
-					
-				.item-price-box
-					%span.item-price
-						=@items.Price
-					%sane.item-tex
-						(税込)
-					%span.item-shipping-fee
-						送料込み
-
-			.item-description
-				= @items.period 
-			.item-detail-table	
+.main
+   =@items.item_images
